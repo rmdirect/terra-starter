@@ -8,6 +8,42 @@ span {
     font-family: press_start;
 }
 
+.how-to {
+    margin-left: 100px;
+    padding-top: 10px;
+    color: #00ffc35f;
+}
+
+.score-header {
+    color: #00ffc38b;
+
+}
+
+.play-header {
+    color: #00ffc3c7;
+}
+
+
+.scratch-header {
+    color: #f900bf;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.nav-home {
+    text-decoration: none;
+}
+
+.nav-home:hover {
+    color: #8462FD;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    cursor: pointer;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
@@ -16,12 +52,18 @@ span {
 
 .App {
     text-align: center;
-    background-color: #282c34;
-    min-height: 90vh;
+    background-color: #EFF3FE;
+    min-height: 75vh;
+}
+
+.leaderboard-box {
+    text-align: center;
+    background-color: #EFF3FE;
+    min-height: 75vh;
 }
 
 .App-header {
-    background-color: #282c34;
+    background-color: #EFF3FE;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -32,28 +74,32 @@ span {
 }
 
 .header-titles {
-    color: white;
-    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #13007e;
+    line-height: 10px;
+    margin-bottom: 70px;
     text-align: center;
     cursor: pointer;
 }
 
 .wallet-address {
-    color:white; 
+    color: white;
     font-size: 18px;
     font-weight: bold;
     position: absolute;
-    top: 65px;
+    top: 40px;
     right: 50px;
-    height: 45px;
+    height: 35px;
     border: 0;
-    padding: 0 40px;
+    padding: 0 10px;
     border-radius: 5px;
     animation: gradient-animation 4s ease infinite;
-    background-image: linear-gradient(to right, #ff6e7f 0%, #f09819 100%);
+    background-image: linear-gradient(to right, #c167ee81 0%, #51daec7f 100%);
 }
 
-.home-link{
+.home-link {
     padding-top: 30px;
 }
 
@@ -65,6 +111,7 @@ span {
     height: 45px;
     border: 0;
     width: auto;
+    margin-top: 50px;
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 5px;
@@ -84,7 +131,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    padding-top: 45px;
 }
 
 .twitter-logo {
@@ -93,7 +140,7 @@ span {
 }
 
 .footer-text {
-    color: white;
+    color: #13007e;
     font-size: 16px;
     font-weight: bold;
 }
@@ -102,6 +149,8 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
+    padding-top: 30px;
 }
 
 .connect-wallet-img {
@@ -109,49 +158,56 @@ span {
     padding: 50px 0;
 }
 
-.home-link{
+.home-link {
     padding-top: 30px;
     text-decoration: none;
+    color: #00ffc35f;
 }
 
 .game-menu-container {
-    padding: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-.game-menu{
+.game-menu {
     display: flex;
     flex-direction: column;
 }
 
 .menu-item {
-    color: white;
+    color: rgba(255, 0, 191, 0.688);
     text-decoration: none;
 }
 
 .item-text {
     line-height: 3;
+
 }
 
 .item-text:hover {
-    color: #b0d59f;
+    color: #00ffc35f;
     text-decoration: none;
     cursor: pointer;
 }
 
-.score-board-container {
+.game-board-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 80vh;
 }
 
-.score{
-    padding: 10px 0;
+.score {
+    color: #8462FD;
 }
 
-.help{
-    padding: 10px 0;
+.help {
+    font-family: press_start;
+    text-align: justify;
     font-size: 20px;
+    color: rgba(255, 0, 191, 0.688);
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .play-container {
@@ -163,13 +219,13 @@ span {
 }
 
 .game-container {
-    border: 1px solid white;
+    border: 1px dashed #8462FD;
     min-height: 80vh;
     min-width: 80vw;
     margin: 20px;
 }
 
-#target{
+#target {
     cursor: pointer;
     position: fixed;
     z-index: 10;
@@ -177,7 +233,7 @@ span {
     bottom: 0;
     left: 0;
     right: 0;
-    user-drag: none;
+    -webkit-user-drag: none;
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
@@ -188,11 +244,15 @@ span {
 
 .set-score-btn {
     margin-top: 50px;
+
 }
 
-#marine-img {
+#ninjacat-img {
     position: absolute;
-    top: 80%;
-    left: 50%;
+    top: 50%;
+    left: 65%;
+    height: 300px;
+    width: 150px;
     transform: translate(-50%, -50%);
+
 }
